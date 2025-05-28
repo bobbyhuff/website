@@ -1,50 +1,36 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #eaeaea;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Layout Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to My Website</h1>
+      <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    
+    <div class="content">
+      <aside class="sidebar left">
+        <p>Left Sidebar</p>
+      </aside>
 
-header {
-  background-color: #4a90e2;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
+      <main>
+        <h2>Main Content</h2>
+        <p>This is the body of the page. You can write all your content here.</p>
+      </main>
 
-nav {
-  margin-top: 10px;
-  text-align: center;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  color: #ffdd57;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.content {
-  display: flex;
-  flex: 1;
-}
-
-main {
-  flex: 2;
-  padding: 20px;
-  background-color: white;
-}
-
-.sidebar {
-  flex: 1;
-  p
+      <aside class="sidebar right">
+        <p>Right Sidebar</p>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
