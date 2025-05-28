@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Layout Page</title>
+  <title>Home Page</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,26 +11,27 @@
     <header>
       <h1>Welcome to My Website</h1>
       <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-    
-    <div class="content">
-      <aside class="sidebar left">
-        <p>Left Sidebar</p>
-      </aside>
 
-      <main>
-        <h2>Main Content</h2>
-        <p>This is the body of the page. You can write all your content here.</p>
-      </main>
+    <main>
+      <div class="form-section">
+        <h2>Get in Touch</h2>
+        <form action="mailto:midtntate@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-      <aside class="sidebar right">
-        <p>Right Sidebar</p>
-      </aside>
-    </div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
   </div>
 </body>
 </html>
+
